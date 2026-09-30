@@ -1,4 +1,5 @@
 # BookLoop
+===========
 
 Team Name: BookLoop
 
@@ -14,6 +15,9 @@ oluwanimi olasanoye - Student Number 300553841
 Leshanth Muralidurga - Student Number 300566852
 
 Marcus Gregoire - Student Number 300537294
+
+
+Product Name: BookLoop
 
 
 A student-to-student platform for buying, selling, and exchanging university textbooks. Find affordable books from fellow students, sell the ones you no longer need, and give textbooks a second life while saving money and building a stronger campus community.
