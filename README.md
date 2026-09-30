@@ -1,8 +1,7 @@
 # BookLoop
-===========
+
 
 Team Name: BookLoop
-
 
 Team Member Names:
 
