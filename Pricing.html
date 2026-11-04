@@ -4,34 +4,31 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BookLoop - Pricing</title>
-  <!-- CSS will be added in Deliverable 3 -->
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
 
-  <!-- Shared menu (same on all 4 pages) -->
-  <header>
-    <!-- Logo goes here once we choose one (click goes to the Home page) -->
-    <nav aria-label="Main menu">
+  <header class="site-header">
+    <a class="logo" href="Home.html">BookLoop</a>
+    <nav class="main-nav" aria-label="Main menu">
       <a href="Product%20Feature.html">Features</a>
       <a href="Pricing.html">Pricing</a>
       <a href="Team.html">Team</a>
-      <a href="#">Login</a>
+      <a class="btn btn-outline" href="#">Login</a>
     </nav>
   </header>
 
   <main>
-
-    <section>
+    <section class="page-intro">
       <h1>Simple pricing for students</h1>
       <p>Buy, sell, and swap textbooks without expensive commitments.</p>
     </section>
 
-    <!-- Two plan cards side by side (layout comes with CSS later) -->
-    <section>
-
-      <article>
+    <section class="plans">
+      <article class="card plan-card">
         <h2>Browse &amp; Swap</h2>
-        <p><strong>Free</strong></p>
+        <p class="price">Free</p>
         <p>For everyone at uOttawa</p>
         <ul>
           <li>Browse textbooks</li>
@@ -40,10 +37,10 @@
           <li>Exchange books</li>
         </ul>
       </article>
-
-      <article>
+      <article class="card plan-card">
         <h2>Sell a Book</h2>
-        <p><strong>5%</strong> per completed sale</p>
+        <p class="price">5%</p>
+        <p>per completed sale</p>
         <ul>
           <li>Free to list</li>
           <li>Pay only when sold</li>
@@ -51,11 +48,9 @@
           <li>No subscription</li>
         </ul>
       </article>
-
     </section>
 
-    <!-- Example: 5% of $60.00 = $3.00, and 60 - 3 = 57 -->
-    <section>
+    <section class="example">
       <h2>Example</h2>
       <p>Selling a $60.00 textbook</p>
       <ul>
@@ -63,12 +58,12 @@
         <li>BookLoop fee: $3.00</li>
       </ul>
     </section>
-
   </main>
 
-  <footer>
+  <footer class="site-footer">
     <p>BookLoop - SEG 2900</p>
   </footer>
 
 </body>
 </html>
+
