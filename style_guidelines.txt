@@ -1,83 +1,136 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BookLoop - Features</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js" defer></script>
-</head>
-<body>
+Purpose: keep the four pages (Home, Features, Pricing, Team) looking the same.
+All pages share one CSS file (style.css) and one JavaScript file (script.js).
 
-  <header class="site-header">
-    <!-- LOGO: replace the text with an <img> once the logo is chosen -->
-    <a class="logo" href="Home.html">BookLoop</a>
-    <nav class="main-nav" aria-label="Main menu">
-      <a href="Product%20Feature.html" aria-current="page">Features</a>
-      <a href="Pricing.html">Pricing</a>
-      <a href="Team.html">Team</a>
-      <a class="btn btn-outline" href="#">Login</a>
-    </nav>
-  </header>
+------------------------------------------------------------
+1. BRAND
+------------------------------------------------------------
+Product: BookLoop, a student-to-student platform to buy, sell and swap
+university textbooks (uOttawa).
+Tagline: "Pass it. Read it. Repeat it."
+Look: clean, light and friendly. White pages, lots of space, purple as
+the main accent. The blue-to-purple gradient comes from the logo.
 
-  <main>
+------------------------------------------------------------
+2. COLORS
+------------------------------------------------------------
+Navy      #1E2A5E   Main text, headings, footer background
+Blue      #2F6FD6   Links and small accents
+Purple    #7B2FBE   Main buttons, active menu item, highlights
+White     #FFFFFF   Page background, text on purple and navy
+Lavender  #F6F5FB   Card background, alternating sections
+Gray      #6B7280   Secondary text (captions, small notes)
 
-    <!-- Block 1: marketing title -->
-    <section class="page-intro">
-      <p class="eyebrow">BookLoop - Features</p>
-      <h1>Your textbooks, on repeat.</h1>
-      <p>A smarter way to buy, sell, and swap books at uOttawa.</p>
-    </section>
+Gradient: linear-gradient(135deg, #2F6FD6, #7B2FBE)
+Use the gradient on one or two elements per page only (main call-to-action
+button). Never behind long text.
 
-    <!-- Block 2: the four features. Links go to Login for now -->
-    <section class="feature-grid">
-      <h2>What you can do</h2>
+Rules:
+- White and navy dominate. Purple is the accent.
+- Text must have a contrast ratio of at least 4.5:1 with its background.
+  Navy on white is about 13:1. White on purple is about 7:1. White on blue
+  is about 4.8:1. Gray on white is about 4.8:1.
+- Do not use color alone to show meaning (add text or an icon).
 
-      <article class="card feature-card">
-        <!-- ICON: bag -->
-        <h3>Buy &amp; Sell</h3>
-        <p>Give your textbooks a second life.</p>
-        <a href="#">Buy or sell a book</a>
-      </article>
+------------------------------------------------------------
+3. TYPOGRAPHY
+------------------------------------------------------------
+Font: Poppins (Google Fonts), fallback: Arial, sans-serif.
+One font family on the whole site.
 
-      <article class="card feature-card">
-        <!-- ICON: two arrows -->
-        <h3>Swap Books</h3>
-        <p>Trade books with other students.</p>
-        <a href="#">Swap a book</a>
-      </article>
+Sizes (desktop):
+- Page title (h1): 40 px, bold, navy
+- Section title (h2): 28 px, semi-bold, navy
+- Card title (h3): 20 px, semi-bold, navy
+- Body text: 16 px, regular, line height 1.6
+- Small text and captions: 14 px, gray
 
-      <article class="card feature-card">
-        <!-- ICON: magnifying glass -->
-        <h3>Find Your Course</h3>
-        <p>Search books by course code.</p>
-        <a href="Home.html">Search for a book</a>
-      </article>
+Lines of text should not be wider than about 70 characters.
 
-      <article class="card feature-card">
-        <!-- ICON: speech bubbles -->
-        <h3>Connect</h3>
-        <p>Arrange exchanges on campus.</p>
-        <a href="#">Start connecting</a>
-      </article>
-    </section>
+------------------------------------------------------------
+4. LAYOUT AND SPACING
+------------------------------------------------------------
+- Page content max width: 1100 px, centered.
+- Spacing scale: 8, 16, 24, 32, 48 px.
+- Space between sections: 48 px.
+- Corner radius: 12 px on cards, 999 px (pill) on buttons and search bar.
+- Cards: lavender background, 1 px light border, soft shadow.
 
-    <!-- Block 3: why choose BookLoop -->
-    <section class="why-section">
-      <h2>Why BookLoop</h2>
-      <ul>
-        <li><strong>Made for uOttawa students</strong> - Find books by course code.</li>
-        <li><strong>Save money</strong> - Buy secondhand or swap textbooks.</li>
-        <li><strong>Easy campus exchanges</strong> - Connect with students at the same university.</li>
-      </ul>
-      <a class="btn" href="Pricing.html">See pricing</a>
-    </section>
+------------------------------------------------------------
+5. HEADER AND MENU (same on all pages)
+------------------------------------------------------------
+- White background, logo on the left.
+- Menu on the right: Features, Pricing, Team, then a Login button.
+- Menu links are navy. The link of the current page is purple and
+  underlined.
+- Hover: link turns purple.
+- Clicking the logo goes to Home.html.
 
-  </main>
+------------------------------------------------------------
+6. BUTTONS
+------------------------------------------------------------
+- Main button: purple background (or the gradient), white text,
+  pill shape, 12 px by 24 px padding.
+- Secondary button (Login): white background, purple outline and text.
+- Hover: slightly darker purple. Keyboard focus: visible 2 px outline.
 
-  <footer class="site-footer">
-    <p>BookLoop - SEG 2900</p>
-  </footer>
+------------------------------------------------------------
+7. PAGES
+------------------------------------------------------------
+HOME
+- Full-width background image behind the hero (same image as the Team page),
+  with a white or light overlay so the text stays readable.
+- Centered title "BookLoop", the tagline, and the search bar
+  ("Search for a book") with a search icon.
+- A small team icon at the bottom right goes to Team.html.
 
-</body>
-</html>
+FEATURES
+- Intro: title "Your textbooks, on repeat." and one sentence.
+- Four feature cards in a 2 x 2 grid: Buy & Sell, Swap Books,
+  Find Your Course, Connect. Each has an icon, a short text and a link.
+- "Why BookLoop" list, then a "See pricing" button.
+
+PRICING
+- Intro with the title "Simple pricing for students".
+- Two cards side by side: Browse & Swap (Free) and Sell a Book (5% per
+  completed sale).
+- Example box: selling a $60.00 textbook, earnings $57.00, fee $3.00.
+
+TEAM
+- Same menu and same background image as Home.
+- One rectangle (card) per member, in a row: round profile photo, full
+  name, short description, LinkedIn and Gmail links.
+- Hover: each rectangle grows (scale 1.05) with a smooth 0.2 s transition.
+
+------------------------------------------------------------
+8. IMAGES
+------------------------------------------------------------
+- Logo: PNG or SVG with a transparent background, about 40 px tall in the
+  header.
+- Member photos: square JPG, at least 300 x 300 px, shown as a circle.
+- Every image has an alt text.
+- Files are in the folder "images".
+
+------------------------------------------------------------
+9. ACCESSIBILITY
+------------------------------------------------------------
+- One h1 per page, headings in order (h1, h2, h3).
+- Every form field has a label.
+- All links and buttons work with the keyboard and show a focus outline.
+- Link text says where it goes ("See pricing", not "click here").
+
+------------------------------------------------------------
+10. RESPONSIVE
+------------------------------------------------------------
+- Mobile first. Under 700 px wide, grids become one column and the menu
+  wraps under the logo.
+- Images never go wider than their container.
+
+------------------------------------------------------------
+11. FILES
+------------------------------------------------------------
+Home.html, Product Feature.html, Pricing.html, Team.html
+style.css       (all CSS, colors defined once as variables)
+script.js       (search bar check)
+images/         (logo and member photos)
+mockups/        (sketches)
+style_guidelines.txt
