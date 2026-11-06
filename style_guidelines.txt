@@ -1,1 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BookLoop - Features</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
 
+  <header class="site-header">
+    <!-- LOGO: replace the text with an <img> once the logo is chosen -->
+    <a class="logo" href="Home.html">BookLoop</a>
+    <nav class="main-nav" aria-label="Main menu">
+      <a href="Product%20Feature.html" aria-current="page">Features</a>
+      <a href="Pricing.html">Pricing</a>
+      <a href="Team.html">Team</a>
+      <a class="btn btn-outline" href="#">Login</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- Block 1: marketing title -->
+    <section class="page-intro">
+      <p class="eyebrow">BookLoop - Features</p>
+      <h1>Your textbooks, on repeat.</h1>
+      <p>A smarter way to buy, sell, and swap books at uOttawa.</p>
+    </section>
+
+    <!-- Block 2: the four features. Links go to Login for now -->
+    <section class="feature-grid">
+      <h2>What you can do</h2>
+
+      <article class="card feature-card">
+        <!-- ICON: bag -->
+        <h3>Buy &amp; Sell</h3>
+        <p>Give your textbooks a second life.</p>
+        <a href="#">Buy or sell a book</a>
+      </article>
+
+      <article class="card feature-card">
+        <!-- ICON: two arrows -->
+        <h3>Swap Books</h3>
+        <p>Trade books with other students.</p>
+        <a href="#">Swap a book</a>
+      </article>
+
+      <article class="card feature-card">
+        <!-- ICON: magnifying glass -->
+        <h3>Find Your Course</h3>
+        <p>Search books by course code.</p>
+        <a href="Home.html">Search for a book</a>
+      </article>
+
+      <article class="card feature-card">
+        <!-- ICON: speech bubbles -->
+        <h3>Connect</h3>
+        <p>Arrange exchanges on campus.</p>
+        <a href="#">Start connecting</a>
+      </article>
+    </section>
+
+    <!-- Block 3: why choose BookLoop -->
+    <section class="why-section">
+      <h2>Why BookLoop</h2>
+      <ul>
+        <li><strong>Made for uOttawa students</strong> - Find books by course code.</li>
+        <li><strong>Save money</strong> - Buy secondhand or swap textbooks.</li>
+        <li><strong>Easy campus exchanges</strong> - Connect with students at the same university.</li>
+      </ul>
+      <a class="btn" href="Pricing.html">See pricing</a>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>BookLoop - SEG 2900</p>
+  </footer>
+
+</body>
+</html>
