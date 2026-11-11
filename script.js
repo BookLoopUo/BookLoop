@@ -37,5 +37,27 @@ document.addEventListener("DOMContentLoaded", function () {
       event.preventDefault();
     });
   });
+  // 4. Home: rotating search hints
+  var searchInput = document.getElementById("book-search");
+  var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
+  if (searchInput && !reduceMotion) {
+    var hints = [
+      "Search for a book",
+      "Try a course code: MAT 1720",
+      "Try a title: Dune",
+      "Try an author: Orwell"
+    ];
+    var hintIndex = 0;
+    var hintTimer = setInterval(function () {
+      hintIndex = (hintIndex + 1) % hints.length;
+      searchInput.placeholder = hints[hintIndex];
+    }, 2500);
+
+    // Stop changing once the visitor clicks in the bar
+    searchInput.addEventListener("focus", function () {
+      clearInterval(hintTimer);
+      searchInput.placeholder = "Search for a book";
+    });
+  }
 });
