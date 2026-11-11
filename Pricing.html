@@ -4,66 +4,100 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BookLoop - Pricing</title>
+  <script>document.documentElement.classList.add("js");</script>
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
 </head>
 <body>
 
   <header class="site-header">
-    <a class="logo" href="Home.html">BookLoop</a>
-    <nav class="main-nav" aria-label="Main menu">
-      <a href="Product%20Feature.html">Features</a>
-      <a href="Pricing.html">Pricing</a>
-      <a href="Team.html">Team</a>
-      <a class="btn btn-outline" href="#">Login</a>
-    </nav>
+    <div class="header-inner">
+      <!-- LOGO: replace the two spans with <img src="images/logo.png" alt="BookLoop"> once chosen -->
+      <a class="logo" href="Home.html"><span class="logo-book">Book</span><span class="logo-loop">Loop</span></a>
+      <nav class="main-nav" aria-label="Main menu">
+        <a href="Product%20Feature.html">Features</a>
+        <a href="Pricing.html">Pricing</a>
+        <a href="Team.html">Team</a>
+        <a class="btn btn-outline" href="#">Log in</a>
+      </nav>
+    </div>
   </header>
 
   <main>
-    <section class="page-intro">
-      <h1>Simple pricing for students</h1>
-      <p>Buy, sell, and swap textbooks without expensive commitments.</p>
+
+    <section class="page-hero">
+      <div class="container">
+        <p class="eyebrow">Pricing</p>
+        <h1>Simple pricing <span class="accent">for students.</span></h1>
+        <p class="lead">Buy, sell, and swap textbooks without expensive commitments.</p>
+      </div>
     </section>
 
-    <section class="plans">
-      <article class="card plan-card">
-        <h2>Browse &amp; Swap</h2>
-        <p class="price">Free</p>
-        <p>For everyone at uOttawa</p>
-        <ul>
-          <li>Browse textbooks</li>
-          <li>List your books</li>
-          <li>Message students</li>
-          <li>Exchange books</li>
-        </ul>
-      </article>
-      <article class="card plan-card">
-        <h2>Sell a Book</h2>
-        <p class="price">5%</p>
-        <p>per completed sale</p>
-        <ul>
-          <li>Free to list</li>
-          <li>Pay only when sold</li>
-          <li>Earn BookLoop Points</li>
-          <li>No subscription</li>
-        </ul>
-      </article>
+    <section class="section">
+      <div class="container">
+
+        <div class="plans reveal">
+          <article class="card plan-card">
+            <h2>Browse &amp; Swap</h2>
+            <p class="price">Free</p>
+            <p>For everyone at uOttawa</p>
+            <ul class="checklist">
+              <li>Browse textbooks</li>
+              <li>List your books</li>
+              <li>Message students</li>
+              <li>Exchange books</li>
+            </ul>
+          </article>
+
+          <article class="card plan-card featured">
+            <h2>Sell a Book</h2>
+            <p class="price">5% <small>per completed sale</small></p>
+            <p>Pay only when your book is sold</p>
+            <ul class="checklist">
+              <li>Free to list</li>
+              <li>Pay only when sold</li>
+              <li>Earn BookLoop Points</li>
+              <li>No subscription</li>
+            </ul>
+          </article>
+        </div>
+
+        <!-- Example: 5% of $60.00 = $3.00, and 60 - 3 = 57 -->
+        <article class="card example reveal" style="margin-top: 24px;">
+          <div>
+            <h3>Example</h3>
+            <p>Selling a $60.00 textbook</p>
+          </div>
+          <ul>
+            <li>Your earnings: $57.00</li>
+            <li>BookLoop fee: $3.00</li>
+          </ul>
+        </article>
+
+      </div>
     </section>
 
-    <section class="example">
-      <h2>Example</h2>
-      <p>Selling a $60.00 textbook</p>
-      <ul>
-        <li>Your earnings: $57.00</li>
-        <li>BookLoop fee: $3.00</li>
-      </ul>
+    <section class="cta-band">
+      <div class="container">
+        <h2>Ready to join the loop?</h2>
+        <p>Browsing and swapping are always free.</p>
+        <a class="btn btn-light" href="#">Get started <span aria-hidden="true">&rarr;</span></a>
+      </div>
     </section>
+
   </main>
 
   <footer class="site-footer">
-    <p>BookLoop - SEG 2900</p>
+    <div class="footer-inner">
+      <a class="logo" href="Home.html"><span class="logo-book">Book</span><span class="logo-loop">Loop</span></a>
+      <nav aria-label="Footer">
+        <a href="Product%20Feature.html">Features</a>
+        <a href="Pricing.html">Pricing</a>
+        <a href="Team.html">Meet the team</a>
+      </nav>
+      <p>BookLoop - SEG 2900</p>
+    </div>
   </footer>
 
 </body>
 </html>
-
