@@ -4,73 +4,111 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BookLoop - Team</title>
+  <script>document.documentElement.classList.add("js");</script>
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
 </head>
-<body class="team-page">
+<body>
+
   <header class="site-header">
-    <a class="logo" href="Home.html">BookLoop</a>
-    <nav class="main-nav" aria-label="Main menu">
-      <a href="Product%20Feature.html">Features</a>
-      <a href="Pricing.html">Pricing</a>
-      <a href="Team.html" aria-current="page">Team</a>
-      <a class="btn btn-outline" href="#">Login</a>
-    </nav>
+    <div class="header-inner">
+      <!-- LOGO: replace the two spans with <img src="images/logo.png" alt="BookLoop"> once chosen -->
+      <a class="logo" href="Home.html"><span class="logo-book">Book</span><span class="logo-loop">Loop</span></a>
+      <nav class="main-nav" aria-label="Main menu">
+        <a href="Product%20Feature.html">Features</a>
+        <a href="Pricing.html">Pricing</a>
+        <a href="Team.html">Team</a>
+        <a class="btn btn-outline" href="#">Log in</a>
+      </nav>
+    </div>
   </header>
 
   <main>
-    <h1>Meet the team</h1>
 
-    <section class="team-grid" aria-label="BookLoop team members">
-      <article class="card member-card">
-        <img class="member-photo" src="images/ken.jpg"
-             alt="Photo of Ken Jordain Ndababishije">
-        <h2>Ken Jordain Ndababishije</h2>
-        <p>Short description.</p>
-        <a href="https://www.linkedin.com/in/ken-jordain-ndabababishije-3466892b0/">LinkedIn</a>
-        <a href="mailto:jndab022@uottawa.ca">Email</a>
-      </article>
-
-      <article class="card member-card">
-        <img class="member-photo" src="images/hannah.jpg"
-             alt="Photo of Hannah Shehryar">
-        <h2>Hannah Shehryar</h2>
-        <p>Short description.</p>
-        <a href="https://www.linkedin.com/in/hannah-s-a78181360/">LinkedIn</a>
-        <a href="mailto:hannahshehryar@gmail.com">Email</a>
-      </article>
-
-      <article class="card member-card">
-        <img class="member-photo" src="images/oluwanimi.jpg"
-             alt="Photo of Toluwanimi Olasanoye">
-        <h2>Toluwanimi Olasanoye</h2>
-        <p>Short description.</p>
-        <a href="https://www.linkedin.com/in/toluwanimi-olasanoye-00a5a0442/">LinkedIn</a>
-        <a href="mailto:tolas046@uottawa.ca">Email</a>
-      </article>
-
-      <article class="card member-card">
-        <img class="member-photo" src="images/leshanth.jpg"
-             alt="Photo of Leshanth Muralidurga">
-        <h2>Leshanth Muralidurga</h2>
-        <p>Short description.</p>
-        <a href="http://linkedin.com/in/leshanth-muralidurga-634876405">LinkedIn</a>
-        <a href="mailto:lmura057@uottawa.ca">Email</a>
-      </article>
-
-      <article class="card member-card">
-        <img class="member-photo" src="images/marcus.jpg"
-             alt="Photo of Marcus Gregoire">
-        <h2>Marcus Gregoire</h2>
-        <p>Short description.</p>
-        <a href="https://www.linkedin.com/in/marcus-gregoire-264ba8448/">LinkedIn</a>
-        <a href="mailto:mgreg101@uottawa.ca">Email</a>
-      </article>
+    <section class="page-hero">
+      <div class="container">
+        <p class="eyebrow">Team</p>
+        <h1>Meet the <span class="accent">team.</span></h1>
+        <p class="lead">Five uOttawa students building BookLoop for SEG 2900.</p>
+      </div>
     </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="team-grid reveal">
+
+          <!-- MEMBER 1. Photo file: images/ken.jpg. Replace the # links -->
+          <article class="card member-card">
+            <img class="member-photo" src="images/ken.jpg" alt="Photo of Ken Jordain Ndababishije">
+            <h2>Ken Jordain Ndababishije</h2>
+            <p>Short description.</p>
+            <div class="member-links">
+              <a href="#">LinkedIn</a>
+              <a href="#">Email</a>
+            </div>
+          </article>
+
+          <!-- MEMBER 2. Photo file: images/hannah.jpg -->
+          <article class="card member-card">
+            <img class="member-photo" src="images/hannah.jpg" alt="Photo of Hannah Shehryar">
+            <h2>Hannah Shehryar</h2>
+            <p>Short description.</p>
+            <div class="member-links">
+              <a href="#">LinkedIn</a>
+              <a href="#">Email</a>
+            </div>
+          </article>
+
+          <!-- MEMBER 3. Photo file: images/toluwanimi.jpg -->
+          <article class="card member-card">
+            <img class="member-photo" src="images/toluwanimi.jpg" alt="Photo of Toluwanimi Olasanoye">
+            <h2>Toluwanimi Olasanoye</h2>
+            <p>Short description.</p>
+            <div class="member-links">
+              <a href="https://www.linkedin.com/in/toluwanimi-olasanoye-00a5a0442/">LinkedIn</a>
+              <a href="mailto:tolas046@uottawa.ca">Email</a>
+            </div>
+          </article>
+
+          <!-- MEMBER 4. Photo file: images/leshanth.jpg -->
+          <article class="card member-card">
+            <img class="member-photo" src="images/leshanth.jpg" alt="Photo of Leshanth Muralidurga">
+            <h2>Leshanth Muralidurga</h2>
+            <p>Short description.</p>
+            <div class="member-links">
+              <a href="https://www.linkedin.com/in/leshanth-muralidurga-634876405">LinkedIn</a>
+              <a href="mailto:lmura057@uottawa.ca">Email</a>
+            </div>
+          </article>
+
+          <!-- MEMBER 5. Photo file: images/marcus.jpg -->
+          <article class="card member-card">
+            <img class="member-photo" src="images/marcus.jpg" alt="Photo of Marcus Gregoire">
+            <h2>Marcus Gregoire</h2>
+            <p>Short description.</p>
+            <div class="member-links">
+              <a href="#">LinkedIn</a>
+              <a href="#">Email</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
   </main>
 
   <footer class="site-footer">
-    <p>BookLoop - SEG 2900</p>
+    <div class="footer-inner">
+      <a class="logo" href="Home.html"><span class="logo-book">Book</span><span class="logo-loop">Loop</span></a>
+      <nav aria-label="Footer">
+        <a href="Product%20Feature.html">Features</a>
+        <a href="Pricing.html">Pricing</a>
+        <a href="Team.html">Meet the team</a>
+      </nav>
+      <p>BookLoop - SEG 2900</p>
+    </div>
   </footer>
+
 </body>
 </html>
