@@ -9,7 +9,7 @@ Ken Jordain Ndababishije - Student Number 300508417
 
 Hannah Shehryar- Student Number 300531460
 
-oluwanimi olasanoye - Student Number 300553841
+Toluwanimi olasanoye - Student Number 300553841
 
 Leshanth Muralidurga - Student Number 300566852
 
