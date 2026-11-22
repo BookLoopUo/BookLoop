@@ -332,30 +332,39 @@ h3 { font-size: 1.2rem; font-weight: 600; letter-spacing: -0.01em; line-height: 
 .example ul { display: flex; flex-wrap: wrap; gap: 8px 32px; margin: 0; padding: 0; list-style: none; font-weight: 600; }
 
 /* 11. TEAM */
-/* 11. TEAM */
 .team-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  display: flex;
+  flex-direction: column;
   gap: 24px;
+  max-width: 900px;
+  margin: 0 auto;
 }
 .member-card {
-  padding: 28px 24px;
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  grid-template-areas:
+    "photo name"
+    "photo text"
+    "photo links";
+  column-gap: 28px;
+  align-items: start;
+  padding: 28px;
   text-align: left;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 .member-card:hover { transform: translateY(-4px); box-shadow: 0 16px 40px rgba(27, 37, 80, 0.14); }
 .member-photo {
-  display: block;
-  width: 120px;
-  height: 120px;
-  margin: 0 auto 16px;
+  grid-area: photo;
+  width: 140px;
+  height: 140px;
+  margin: 0;
   border-radius: 50%;
   object-fit: cover;
   background: var(--tint);
 }
-.member-card h2 { font-size: 1.15rem; letter-spacing: -0.01em; line-height: 1.25; text-align: center; }
-.member-card p { margin: 12px 0 16px; font-size: 0.95rem; line-height: 1.6; color: var(--gray); }
-.member-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 4px 14px; font-size: 0.9rem; font-weight: 600; }
+.member-card h2 { grid-area: name; font-size: 1.25rem; letter-spacing: -0.01em; line-height: 1.25; }
+.member-card p { grid-area: text; margin: 8px 0 12px; font-size: 1rem; line-height: 1.6; color: var(--gray); }
+.member-links { grid-area: links; display: flex; flex-wrap: wrap; justify-content: flex-start; gap: 4px 18px; font-size: 0.95rem; font-weight: 600; }
 
 /* 12. FOOTER */
 .site-footer { background: var(--white); border-top: 1px solid var(--line); }
@@ -392,6 +401,14 @@ h3 { font-size: 1.2rem; font-weight: 600; letter-spacing: -0.01em; line-height: 
   .search-form .btn { width: 100%; justify-content: center; }
   .main-nav { gap: 16px; }
   .section, .cta-band { padding: 48px 0; }
+}
+@media (max-width: 700px) {
+  .member-card {
+    grid-template-columns: 1fr;
+    grid-template-areas: "photo" "name" "text" "links";
+    justify-items: center;
+    text-align: center;
+  }
 }
 
 /* 15. REDUCED MOTION */
